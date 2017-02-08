@@ -1,6 +1,7 @@
 package android.com.solutions.nerd.cruising.ui.activities;
 
 import android.com.solutions.nerd.cruising.R;
+import android.com.solutions.nerd.cruising.ui.auth.AuthUiActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;

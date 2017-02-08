@@ -7,5 +7,5 @@ import android.support.v7.app.AppCompatActivity;
  * for Nerd.Solutions
  */
 
-public class AuthUIActivity extends AppCompatActivity {
+public class AuthUiActivity extends AppCompatActivity {
 }
