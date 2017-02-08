@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "589192981096",
+    "firebase_url": "https://cruising-3ed21.firebaseio.com",
+    "project_id": "cruising-3ed21",
+    "storage_bucket": "cruising-3ed21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589192981096:android:ae2821f1e509afe3",
+        "android_client_info": {
+          "package_name": "android.com.solutions.nerd.cruising"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589192981096-no9dgr5pq3ii9avni4u6equqquekiabb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUpW7fGfuKORd8iFmDd8wDMJdvXJKFKh4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589192981096-no9dgr5pq3ii9avni4u6equqquekiabb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
