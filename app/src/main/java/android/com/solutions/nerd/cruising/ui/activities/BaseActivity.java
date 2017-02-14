@@ -4,8 +4,10 @@ import android.com.solutions.nerd.cruising.interfaces.IVehicle;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.firebase.ui.auth.AuthUI;
+import com.firebase.ui.auth.ui.ActivityHelper;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Arrays;
@@ -16,7 +18,7 @@ import java.util.Arrays;
  */
 
 public abstract class BaseActivity  extends AppCompatActivity {
-
+    private static final String TAG=BaseActivity.class.getSimpleName();
 
     private IVehicle vehicle;
     public IVehicle getVehicle(){return vehicle;}
@@ -33,15 +35,25 @@ public abstract class BaseActivity  extends AppCompatActivity {
     private static final int RC_SIGN_IN = 123;
 
 
+    protected ActivityHelper mActivityHelper;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         // Check firebase
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if(auth.getCurrentUser()!=null){
             // Allready signed in
         }else{
+            Log.d(TAG,"creating sign in");
+            SignIn();
+//            startActivityForResult(
+//                    // Get an instance of AuthUI based on top of app
+//                    AuthUI.getInstance().createSignInIntentBuilder().build(),
+//                    RC_SIGN_IN
+//            );
+
             // Not signed in
         }
     }

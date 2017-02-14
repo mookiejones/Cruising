@@ -4,6 +4,8 @@ package android.com.solutions.nerd.cruising.ui.activities;
  * Created by mookie on 2/7/17.
  * for Nerd.Solutions
  */
+import android.com.solutions.nerd.cruising.R;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,6 +20,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.auth.AuthUI;
@@ -60,7 +63,7 @@ public class SignedInActivity extends AppCompatActivity {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser == null) {
-            startActivity(AuthUiActivity.createIntent(this));
+            startActivity(AuthUIActivity.createIntent(this));
             finish();
             return;
         }
@@ -81,7 +84,7 @@ public class SignedInActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            startActivity(AuthUiActivity.createIntent(SignedInActivity.this));
+                            startActivity(AuthUIActivity.createIntent(SignedInActivity.this));
                             finish();
                         } else {
                             showSnackbar(R.string.sign_out_failed);
@@ -114,7 +117,7 @@ public class SignedInActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            startActivity(AuthUiActivity.createIntent(SignedInActivity.this));
+                            startActivity(AuthUIActivity.createIntent(SignedInActivity.this));
                             finish();
                         } else {
                             showSnackbar(R.string.delete_account_failed);
