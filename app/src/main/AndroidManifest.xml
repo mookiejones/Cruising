@@ -22,11 +22,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
 
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".ui.activities.SignupActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -43,6 +51,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <receiver
+            android:label="@string/widget_label"
+            android:name=".providers.WidgetProvider">
+            <intent-filter>
+                <action  android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+
+
+        </receiver>
+        <service android:name=".services.UpdateWidgetService"></service>
     </application>
 
 </manifest>
