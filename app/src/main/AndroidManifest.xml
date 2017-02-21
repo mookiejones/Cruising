@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="android.com.solutions.nerd.cruising"
-    android:screenOrientation="portrait"
     android:installLocation="auto"
+    android:screenOrientation="portrait"
     >
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -26,19 +26,20 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="stateHidden|adjustPan"
-            android:screenOrientation="portrait">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
-        <activity android:name=".ui.activities.SignupActivity"
-            android:label="@string/app_name">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SignupActivity"
+            android:label="@string/app_name">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".FullscreenActivity"
@@ -53,8 +54,8 @@
         </activity>
         
         <receiver
-            android:label="@string/widget_label"
-            android:name=".providers.WidgetProvider">
+            android:name=".providers.WidgetProvider"
+            android:label="@string/widget_label">
             <intent-filter>
                 <action  android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
