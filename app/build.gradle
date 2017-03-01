@@ -3,8 +3,8 @@ apply plugin: 'com.android.application'
 apply from: "../constants.gradle"
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion compile_version
+    buildToolsVersion build_tools_version
 
 
     defaultConfig {
@@ -34,6 +34,8 @@ dependencies {
     compile "com.android.support:support-v4:$support_library_version"
     compile "com.android.support:gridlayout-v7:$support_library_version"
 
+
+
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.2.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
@@ -57,6 +59,14 @@ dependencies {
     compile "com.google.firebase:firebase-storage:$firebase_version"
     compile "com.google.android.gms:play-services-gcm:$firebase_version"
 
-
+    // The following dependencies are not required to use the Firebase UI library.
+    // They are used to make some aspects of the demo app implementation simpler for
+    // demonstrative purposes, and you may find them useful in your own apps; YMMV.
+    compile 'pub.devrel:easypermissions:0.3.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+   // apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 }
 apply plugin: 'com.google.gms.google-services'

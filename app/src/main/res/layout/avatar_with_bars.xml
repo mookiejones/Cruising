@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/avatar_with_bars_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:adjustViewBounds="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/brand"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.com.solutions.nerd.cruising.ui.views.AvatarView
+            android:id="@+id/avatarView"
+            android:layout_width="@dimen/avatar_header_width"
+            android:layout_height="@dimen/avatar_header_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"/>
+        <com.habitrpg.android.habitica.ui.AvatarView
+
+            app:showBackground="true"
+            app:showMount="true"
+            app:showPet="true" />
+
+        <LinearLayout
+            android:id="@+id/LL_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/hpBar"
+                layout="@layout/value_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/header_bar_spacing" />
+
+            <include
+                android:id="@+id/xpBar"
+                layout="@layout/value_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/header_bar_spacing"  />
+
+            <include
+                android:id="@+id/mpBar"
+                layout="@layout/value_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+        <TextView
+            android:id="@+id/lvl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:drawableLeft="@drawable/ic_header_warrior"
+            android:drawableStart="@drawable/ic_header_warrior"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondaryDark"
+            tools:text="Lvl 12 Warrior" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/gems_tv"
+                android:drawableLeft="@drawable/ic_header_gem"
+                android:drawableStart="@drawable/ic_header_gem"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:drawablePadding="8dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textColorSecondaryDark"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                />
+
+            <TextView
+                android:id="@+id/gold_tv"
+                android:drawableLeft="@drawable/ic_header_gold"
+                android:drawableStart="@drawable/ic_header_gold"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:drawablePadding="6dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textColorSecondaryDark"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:id="@+id/silver_tv"
+                android:drawableLeft="@drawable/ic_header_silver"
+                android:drawableStart="@drawable/ic_header_silver"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:drawablePadding="6dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textColorSecondaryDark"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

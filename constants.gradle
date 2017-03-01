@@ -9,3 +9,5 @@ project.ext.buildTools = '25.0.2'
 project.ext.compileSdk = 25
 project.ext.targetSdk = 25
 project.ext.minSdk=23
+project.ext.compile_version = 25
+project.ext.build_tools_version = '25'

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="brand_50">#36205D</color>
+    <color name="brand_100">#432874</color>
+    <color name="brand_200">#4f2a93</color>
+    <color name="brand_300">#6133B4</color>
+    <color name="brand_400">#9A62FF</color>
+    <color name="brand_500">#bda8ff</color>
+    <color name="brand_700">#ede7f6</color>
+    <color name="brand">@color/brand_100</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
@@ -53,4 +62,13 @@
     <color name="btn_login_bg">#eceef1</color>
     <color name="lbl_name">#333333</color>
     <color name="btn_logut_bg">#ff6861</color>
+
+    <!-- text -->
+    <color name="textColorDark">#FFFFFF</color>
+    <color name="textColorSecondaryDark">@color/brand_500</color>
+    <color name="textColorLight">#212121</color>
+    <color name="textColorSecondaryLight">#727272</color>
+
+
+
 </resources>
