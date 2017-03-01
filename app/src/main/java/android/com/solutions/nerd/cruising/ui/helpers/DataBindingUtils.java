@@ -1,6 +1,6 @@
 package android.com.solutions.nerd.cruising.ui.helpers;
-import android.databinding.BindingAdapter;
-import android.databinding.DataBindingUtil;
+//import android.databinding.BindingAdapter;
+//import android.databinding.DataBindingUtil;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -19,7 +19,7 @@ import android.widget.TextView;
  * Created by cberman on 3/1/2017.
  */
 public class DataBindingUtils {
-
+/*
     @BindingAdapter("bind:imageName")
     public static void loadImage(SimpleDraweeView view, String imageName) {
         if (view.getVisibility() == View.VISIBLE) {
@@ -143,4 +143,5 @@ public class DataBindingUtils {
             return true;
         }
     }
+    */
 }
