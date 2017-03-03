@@ -54,20 +54,20 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/bar_size"
             android:orientation="horizontal"
-            android:background="@{partyMembers ? @drawable/layout_rounded_bg_light_gray : @drawable/layout_rounded_bg_brand}"
+            android:background="@drawable/layout_rounded_bg_light_gray"
             android:weightSum="1">
 
             <View
                 android:id="@+id/bar"
                 android:layout_width="0dip"
                 android:layout_height="match_parent"
-                android:layout_weight="@{weightToShow}"
-                app:rounded_background="@{barForegroundColor}" />
+                android:layout_weight="1"
+               />
 
             <View
                 android:layout_width="0dip"
                 android:layout_height="match_parent"
-                android:layout_weight="@{1.0f - weightToShow}" />
+                android:layout_weight="0.5" />
         </LinearLayout>
 
         <LinearLayout
@@ -83,7 +83,7 @@
                 android:id="@+id/TV_value"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textColor="@{partyMembers ? @color/brand_50 : @color/brand_500}"
+                android:textColor="@color/brand_50"
 
                 android:layout_weight="1"
                 />
@@ -96,7 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|right"
-                android:textColor="@{partyMembers ? @color/brand_50 : @color/brand_500}"
+                android:textColor="@color/brand_50"
 
                 android:layout_weight="1" />
         </LinearLayout>

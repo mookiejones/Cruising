@@ -68,7 +68,7 @@
     <color name="textColorSecondaryDark">@color/brand_500</color>
     <color name="textColorLight">#212121</color>
     <color name="textColorSecondaryLight">#727272</color>
-
+    <color name="task_gray">#b7b7b7</color>
 
 
 </resources>

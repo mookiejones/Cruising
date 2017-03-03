@@ -9,5 +9,24 @@
         <attr name="metaButtonBarButtonStyle" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="AvatarView">
+        <attr name="showBackground" format="boolean" />
+        <attr name="showMount" format="boolean" />
+        <attr name="showPet" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="GemPurchaseOptionsView">
+        <attr name="gemAmount" format="integer" />
+        <attr name="priceText" format="string" />
+        <attr name="gemDrawable" format="integer" />
+        <attr name="showSeedsPromo" format="boolean" />
+    </declare-styleable>
 
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeightMultiplier" format="float" />
+    </declare-styleable>
+    <declare-styleable name="SubscriptionOptionView">
+        <attr name="recurringText" format="string" />
+        <attr name="gemCapText" format="string" />
+        <attr name="hourGlassCount" format="integer" />
+    </declare-styleable>
 </resources>

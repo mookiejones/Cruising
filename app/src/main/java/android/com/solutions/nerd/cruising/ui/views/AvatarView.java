@@ -1,32 +1,24 @@
 package android.com.solutions.nerd.cruising.ui.views;
 
+import android.com.solutions.nerd.cruising.models.User;
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
-import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
-import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 
-import com.firebase.ui.auth.ui.User;
-
 import java.util.Collections;
-import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by cberman on 3/1/2017.
+ * Created by cberman on 3/2/2017.
  */
 
 public class AvatarView extends View {
@@ -53,7 +45,7 @@ public class AvatarView extends View {
     private boolean hasMount;
     private boolean hasPet;
     private boolean isOrphan;
-   // private MultiDraweeHolder<GenericDraweeHierarchy> multiDraweeHolder = new MultiDraweeHolder<>();
+    // private MultiDraweeHolder<GenericDraweeHierarchy> multiDraweeHolder = new MultiDraweeHolder<>();
     private User user;
 
     private RectF avatarRectF;
@@ -161,7 +153,7 @@ public class AvatarView extends View {
 //            draweeHolder.setController(controller);
         }
 
-     //   if (isOrphan) multiDraweeHolder.onAttach();
+        //   if (isOrphan) multiDraweeHolder.onAttach();
     }
 
     private String getFileName(@NonNull String imageName) {
