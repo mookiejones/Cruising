@@ -98,4 +98,6 @@
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="allow_new_email_acccount">Allow account creation if email does not exist.</string>
     <string name="name_auth_ui">Auth UI</string>
+    <string name="skip_button">Skip</string>
+    <string name="intro_finish_button">Finish</string>
 </resources>
